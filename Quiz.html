@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="Quiz.js"></script>
+</head>
+<header>
+    <ul>
+        <li><a class="active" href="Landing.html">Home</a></li>
+    </ul>
+</header>
+<body>
+    <h1>Quiz</h1>
+    <div id="q1" class="questions">
+        <h2>Question 1</h2>
+        <span>
+            Disaster is defined as event or fact that results in unfortunate consequence. Are you aware of any prominent disasters that could occur in the area of your IT facilities? Eg. earthquakes, water damage.
+        </span><br>
+        <input type="radio" name="question1" value="1"> Yes<br>
+        <input type="radio" name="question1" value="2"> No, I don’t think disaster will strike.<br>
+        <button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q2" class="questions">
+        <h2>Question 2</h2>
+        <span>
+            Unfortunately, disaster can strike in many forms. Please identify which of the following disaster categories your IT facilities are exposed to. Common disasters are listed for clarification.
+        </span><br>
+        <input type="checkbox" name="question2" value="2"> Prone Natural Disasters that are susceptible to location (Earthquakes, Floods etc.)<br>
+        <input type="checkbox" name="question2" value="2"> Man-Made Disasters
+        (Civil unrest, Political breakdown, Chemical Spills etc.)<br>
+        <input type="checkbox" name="question2" value="1"> Internal Disasters
+        (Employee conflict, Unsecure access etc.)<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q3" class="questions">
+        <h2>Question 3</h2>
+        <span>
+            Do you have any kind of protection in place against the threat of such disasters?
+        </span><br>
+        <input type="radio" name="question3" value="2"> We have a contingency plan.<br>
+        <input type="radio" name="question3" value="2"> We have physical protection in place.<br>
+        <input type="radio" name="question3" value="1"> We have both, physical protection and contingency planning.<br>
+        <input type="radio" name="question3" value="4"> No, we don’t have any protection that extends beyond our regular IT governance.<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q4" class="questions">
+        <h2>Question 4</h2>
+        <span>
+            Internal threats are commonly presented through eating, drinking, and smoking around sensitive areas of IT facility. Do you have policy in place that restricts these threats?
+        </span><br>
+        <input type="radio" name="question4" value="1"> We have policy that restricts all of these threats.<br>
+        <input type="radio" name="question4" value="2"> We have policy that restricts some of these threats.<br>
+        <input type="radio" name="question4" value="3"> We have no consideration of these threats in policy.<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q5" class="questions">
+        <h2>Question 5</h2>
+        <span>
+            In the event that disaster strikes, does your organisation have any means or procedure for alarming personal? This includes both internal personal and relevant authorities.
+        </span><br>
+        <input type="radio" name="question5" value="1"> We alarm the necessary authority.<br>
+        <input type="radio" name="question5" value="3"> No, no alarm is raised.<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q6" class="questions">
+        <h2>Question 6</h2>
+        <span>
+            Regardless if you sound alarms, do you have log or prioritise incident reports in any manner?
+        </span><br>
+        <input type="radio" name="question6" value="1"> Yes<br>
+        <input type="radio" name="question6" value="2"> No<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q7" class="questions">
+        <h2>Question 7</h2>
+        <span>
+            Do your server rooms contain any rubbish bins, paper, cardboard boxes, or any object that is considered redundant to the purpose of the sever room?
+        </span><br>
+        <input type="radio" name="question7" value="2"> Yes<br>
+        <input type="radio" name="question7" value="1"> No<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q8" class="questions">
+        <h2>Question 8</h2>
+        <span>
+            Whilst you likely have insurance in place to protect your IT facilities, are you aware of any gaps between insurance policy and contingency plans?
+        </span><br>
+        <input type="radio" name="question8" value="3"> Yes, there are some gaps<br>
+        <input type="radio" name="question8" value="2"> No, I am not aware of our insurance policy surrounding IT<br>
+        <input type="radio" name="question8" value="1"> No, there are no gaps<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q9" class="questions">
+        <h2>Question 9</h2>
+        <span>
+            Are you aware if there are multiple utility suppliers within the vicinity of your IT facility? Eg. Water, Electricity.
+        </span><br>
+        <input type="radio" name="question9" value="1"> Yes, there are multiple utility suppliers for common utilities.<br>
+        <input type="radio" name="question9" value="3"> No, there are exclusive suppliers.<br>
+        <input type="radio" name="question9" value="2"> I am not aware.<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q10" class="questions">
+        <h2>Question 10</h2>
+        <span>
+            Are you aware if there are multiple utility suppliers within the vicinity of your IT facility? Eg. Water, Electricity.
+        </span><br>
+        <input type="radio" name="question10" value="1"> Yes<br>
+        <input type="radio" name="question10" value="2"> No<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q11" class="questions">
+        <h2>Question 11</h2>
+        <span>
+            Please describe your IT facility cabling:
+        </span><br>
+        <input type="radio" name="question11" value="1"> All cabling is considered structured and organised<br>
+        <input type="radio" name="question11" value="2"> Most of our cabling is considered structured and organised.<br>
+        <input type="radio" name="question11" value="2"> Some of our cabling is considered structured and organised.<br>
+        <input type="radio" name="question11" value="4"> Our cabling is considered unorganised and unstructured.<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="showNext(); show(); move();" type="button">Next</button>
+    </div>
+    <div id="q12" class="questions">
+        <h2>Question 12</h2>
+        <span>
+            Are your IT facilities compliant with vendor requirements and safety laws?
+        </span><br>
+        <input type="radio" name="question12" value="1"> Our IT facilities are fully compliant across health and safety, and vendor requirements.<br>
+        <input type="radio" name="question12" value="2"> Our IT facilities are somewhat compliant across health and safety, and vendor requirements.<br>
+        <input type="radio" name="question12" value="3"> Our IT facilities have big gaps across requirements and guidelines like such.<br>
+        <button onclick="showPrev(); show(); move();" type="button">Prev</button><button onclick="submit()" type="button">Finish</button>
+    </div>
+
+    <div id="main" class="results">
+        <h2>Overview</h2>
+        <div id="percentage">
+            <span>Across COBIT practices, DSS01.04 Manage Environment, and DSS01.05 Manage Facilities, you scored </span>
+        </div>
+        <h2>Results</h2>
+        <div id="q1results">
+            <p id="q1yes" class="subresults">
+                In Question One you stated that your organisational IT facilities are not liable to prominent disaster.
+                Please be aware that disaster can be invisible, emergent, and complex. Therefore, you are more than likely
+                liable in some form. COBIT DSS01.04-05 can be used to mitigate such risk liability and achieve the control
+                objective of protection against environmental factors sufficiently.
+            </p>
+            <p id="q1no" class="subresults">
+                Please be aware that wider disasters
+                 exist - they can be invisible, emergent, and complex. COBIT DSS01.04-05 can be used to mitigate such risk
+                 liability and achieve the control objective of protection against environmental factors sufficiently.
+            </p>
+        </div>
+        <div id="s1results">
+            <p id="s1bottom" class="subresults">
+                Although there is room for improvement, your organisation is taking steps to towards protection against environmental factors.
+            </p>
+            <p id="s1top" class="subresults">
+                You scored poorly in terms of managing the environment of your IT facilities. You should ensure that measures for protection
+                against environmental factors are undertaken. This could include installing specialises equipment and services to monitor and
+                control the environment.
+            </p>
+        </div>
+        <div id="s2results">
+            <p id="s2bottom" class="subresults">
+                You scored poorly in terms of managing your IT facilities. You should consider undertaking a facility assessment
+                report to identify specific areas requiring action.
+            </p>
+            <p id="s2top">
+                Although there is room for improvement, your organisation is taking steps to towards effectively managing your IT facilities.
+            </p>
+        </div>
+        <button onclick="location.reload();" type="button">Retake the test!</button>
+    </div>
+
+    <div id="bar" class="w3-progress-container w3-light-blue">
+        <div id="responseBar" class="w3-progressbar w3-blue" style="width:7%">
+        </div>
+    </div>
+
+</body>
